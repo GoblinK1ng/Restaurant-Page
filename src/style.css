@@ -21,6 +21,7 @@ body{
   padding: 24px;
   /*height: max(100vh, 500px);*/
   flex-grow: 1;
+  /*background-image: url();*/
 }
 
 #main-container{
@@ -38,6 +39,8 @@ body{
 .header{
   border: 8px rgb(241, 175, 88) solid;
   width: min(75%,600px);
+  border-radius: 24px;
+  
 
   padding: 24px;
   display: flex;
@@ -86,3 +89,4 @@ button:active{
 .contact{
   align-items: flex-start;
 }
+
