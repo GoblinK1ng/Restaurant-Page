@@ -3,8 +3,14 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
+#content{
+  background-color: antiquewhite;
+}
+
 #main-container{
   height: 700px;
   display:flex;
 
 }
+
+
