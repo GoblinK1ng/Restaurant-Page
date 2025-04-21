@@ -3,28 +3,46 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 #content{
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: antiquewhite;
-  height: 100vh;
+  padding: 24px;
+  /*height: max(100vh, 500px);*/
+  flex-grow: 1;
 }
 
 #main-container{
   padding: 20px;
-  height: 700px;
+  
   width: 80%;
   display:flex;
   flex-direction: column;
   align-items: center;
   background-color: rgb(245, 220, 188);
+  gap: 12px;
 
 }
 
 .home-header{
   border: 8px rgb(241, 175, 88) solid;
-  width: 75%;
+  width: min(75%,600px);
+
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  
 }
 
 

@@ -20,8 +20,14 @@ export function createHomepage(){
     const title = document.getElementById("Title");
     title.textContent = "Waffles Waffles to Go";
 
-    const abouts = document.getElementById("About");
-    abouts.textContent = "Waffles Waffles to Go";
+    const about = document.getElementById("About");
+    const aboutTitle = document.createElement("h2");
+    const aboutWords = document.createElement("p");
+    aboutTitle.textContent = "About Us";
+    aboutWords.textContent = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore voluptatem aut officiis saepe nesciunt, corporis non eum quo optio tenetur esse sapiente modi laboriosam facere deserunt ducimus reprehenderit deleniti quos!";
+    about.appendChild(aboutTitle);
+    about.appendChild(aboutWords);
+
 
     const hours = document.getElementById("Hours");
     hours.textContent = "Waffles Waffles to Go";
