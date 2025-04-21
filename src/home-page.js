@@ -1,5 +1,6 @@
 export function createHomepage(){
     const content = document.getElementById("content");
+    content.innerHTML = "";
     const main = document.createElement("div");
     main.id = "main-container";
     
