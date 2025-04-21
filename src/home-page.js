@@ -14,13 +14,13 @@ export function createHomepage(){
     const title = document.createElement("div");
     title.textContent = "Waffles Waffles to Go";
     title.id = "Title";
-    title.classList = "home-header";
+    title.classList = "header";
     main.appendChild(title);
 
     for (const key in homeHeaderNames){
         const header = document.createElement("div");
         header.id = key;
-        header.classList = "home-header";
+        header.classList = "home header";
 
         const headerTitle = document.createElement("h2");
         const headerAbout = document.createElement("p");

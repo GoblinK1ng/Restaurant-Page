@@ -35,7 +35,7 @@ body{
 
 }
 
-.home-header{
+.header{
   border: 8px rgb(241, 175, 88) solid;
   width: min(75%,600px);
 
@@ -83,3 +83,6 @@ button:active{
 }
 
 
+.contact{
+  align-items: flex-start;
+}

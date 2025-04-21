@@ -5,31 +5,39 @@ export function createContact(){
     main.id = "main-container";
     
 
-    const homeHeaderNames = {
-        About: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore voluptatem aut officiis saepe nesciunt, corporis non eum quo optio tenetur esse sapiente modi laboriosam facere deserunt ducimus reprehenderit deleniti quos!",
-        Hours: "",
-        Location: "This place"
-    };
+    const contacts = [
+        {name: "Bingus", 
+        phone: "123 456 5719", 
+        location: "some place dr, New York"},
+        {name: "Dingus",
+        phone: "987 654 3210",
+        location: "Another place Rd, York new"
+        }
+    ];
 
-    const title = document.createElement("div");
-    title.textContent = "Waffles Waffles to Go";
-    title.id = "Title";
-    title.classList = "home-header";
-    main.appendChild(title);
+    
 
-    for (const key in homeHeaderNames){
+    for (const key in contacts){
+        const currentContact = contacts[key];
+
         const header = document.createElement("div");
-        header.id = key;
-        header.classList = "home-header";
+        
+
+        header.id = currentContact.name;
+        header.classList = "contact header";
 
         const headerTitle = document.createElement("h2");
-        const headerAbout = document.createElement("p");
+        const headerPhone = document.createElement("p");
+        const headerLocation = document.createElement("p");
+        
 
-        headerTitle.textContent = key;
-        headerAbout.textContent = homeHeaderNames[key];
+        headerTitle.textContent = currentContact.name;
+        headerPhone.textContent = currentContact.phone;
+        headerLocation.textContent =currentContact.location;
 
         header.appendChild(headerTitle);
-        header.appendChild(headerAbout);
+        header.appendChild(headerPhone);
+        header.appendChild(headerLocation);
 
         main.appendChild(header);
     };
