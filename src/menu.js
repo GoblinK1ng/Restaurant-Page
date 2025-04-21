@@ -38,10 +38,26 @@ export function createMenu(){
     for (const key in menuItems){
         
         const currentItem = menuItems[key];
-        var category = document.querySelector("#"+currentItem.category);
-        if (currentItem.category === null) {
-            const category = document.createElement("div");
+        let category = null;
+        for ( let item of main.children){
+            
+            
+            if (item.id === currentItem.category){
+                
+                category = item;
+                break;
+            }
+        }
+        
+        
+
+        if (category === null) {
+            
+            category = document.createElement("div");
+            category.textContent = currentItem.category;
+            category.classList = "category";
             category.id = currentItem.category;
+            main.appendChild(category);
         }
 
         const header = document.createElement("div");
@@ -66,7 +82,7 @@ export function createMenu(){
         header.appendChild(headerDescription);
         header.appendChild(headerCalories);
 
-        main.appendChild(header);
+        category.appendChild(header);
     };
 
     
