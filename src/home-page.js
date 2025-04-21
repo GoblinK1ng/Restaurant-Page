@@ -4,4 +4,5 @@ export function createHomepage(){
     main.id = "main-container";
     content.appendChild(main);
     
+    
 };
