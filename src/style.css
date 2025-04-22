@@ -86,7 +86,20 @@ button:active{
 }
 
 
-.contact{
+.contact, .menu{
   align-items: flex-start;
 }
 
+
+#category-title{
+  font-size: 2rem;
+}
+
+.category{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0px;
+  width: 100%;
+}

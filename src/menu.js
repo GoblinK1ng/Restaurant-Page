@@ -28,9 +28,9 @@ export function createMenu(){
     
 
     const title = document.createElement("div");
-    title.textContent = "Waffles Waffles to Go";
+    title.textContent = "Menu";
     title.id = "Title";
-    title.classList = "menu header";
+    title.classList = "title header";
     main.appendChild(title);
 
      
@@ -54,7 +54,11 @@ export function createMenu(){
         if (category === null) {
             
             category = document.createElement("div");
-            category.textContent = currentItem.category;
+            const categoryTitle = document.createElement("h2");
+            categoryTitle.id = "category-title";
+            categoryTitle.textContent = currentItem.category;
+            category.appendChild(categoryTitle);
+            
             category.classList = "category";
             category.id = currentItem.category;
             main.appendChild(category);

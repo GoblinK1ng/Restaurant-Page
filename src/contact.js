@@ -15,6 +15,13 @@ export function createContact(){
         }
     ];
 
+    const title = document.createElement("div");
+    title.textContent = "Contact Us";
+    title.id = "Title";
+    title.classList = "title header";
+    main.appendChild(title);
+
+
     
 
     for (const key in contacts){
